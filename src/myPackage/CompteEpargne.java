@@ -10,7 +10,7 @@ public class CompteEpargne {
 	public void setSolde(double montant)
 	{
 		_solde = montant;
-	}
+	}//j
 	public double getSolde()
 	{
 		return _solde;
