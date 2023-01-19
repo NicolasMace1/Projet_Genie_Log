@@ -1,22 +1,22 @@
 package myPackage;
 
 public class CompteEpargne {
-	private double _soldeEpargne;
+	private double _solde;
 	private double _tauxInteret = 1.032;
 	public CompteEpargne()
 	{
-		_soldeEpargne = 0;
+		_solde = 0;
 	}
 	public void setSolde(double montant)
 	{
-		_soldeEpargne = montant;
+		_solde = montant;
 	}
 	public double getSolde()
 	{
-		return _soldeEpargne;
+		return _solde;
 	}
 	public void remunerer()
 	{
-		_soldeEpargne *= _tauxInteret;
+		_solde *= _tauxInteret;
 	}
 }

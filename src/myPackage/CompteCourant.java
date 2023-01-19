@@ -2,17 +2,17 @@ package myPackage;
 
 public class CompteCourant implements Compte {
 	
-	private double _soldeCourant;
+	private double _solde;
 	public CompteCourant()
 	{
-		_soldeCourant = 0;
+		_solde = 0;
 	}
 	public void setSolde(double montant)
 	{
-		_soldeCourant = montant;
+		_solde = montant;
 	}
 	public double getSolde()
 	{
-		return _soldeCourant;
+		return _solde;
 	}
 }
