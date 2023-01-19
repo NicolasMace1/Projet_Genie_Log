@@ -6,7 +6,7 @@ public class DossierBancaire {
 	private CompteEpargne CE;
 	private double m_solde;
 	
-	//Constructeur
+	//Constructeur autre commit
     public DossierBancaire()
     {
     	m_solde=0;

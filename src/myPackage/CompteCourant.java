@@ -4,7 +4,7 @@ public class CompteCourant implements Compte {
 	
 	private double _solde;
 	public CompteCourant()
-	{
+	{//newdev
 		_solde = 0;
 	}
 	public void setSolde(double montant)
