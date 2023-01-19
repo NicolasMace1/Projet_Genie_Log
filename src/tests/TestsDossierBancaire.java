@@ -31,5 +31,28 @@ public class TestsDossierBancaire {
 		DossierBancaire dossier=new DossierBancaire();
 		assertEquals(0, (int)dossier.get_solde());
 	}
+	
+	@Test
+	public void should_Take_50_Test_Retirer()
+	{
+		DossierBancaire dossier=new DossierBancaire();
+		dossier.deposer(100);
+		assertEquals(100, (int)dossier.get_solde());
+		dossier.retirer(50);
+		assertEquals(50, (int)dossier.get_solde());
+	}
+	
+	@Test
+	public void should_Raise_An_Exception_When_There_Is_Not_Enough()
+	{
+		try {
+			DossierBancaire dossier=new DossierBancaire();
+			dossier.deposer(100);
+			dossier.retirer(500);
+		    fail("Should not be able to take 500 when there is 100 on the account");
+		  }catch(IllegalArgumentException aExp){
+		    assert(aExp.getMessage().contains("Vous n'avez pas assez d'argent sur votre compte"));
+		  }
+	}
 
 }
